@@ -16,7 +16,7 @@
                   <h5 class="card-title">
                     Weight: <%=product.weight%> Kgs
                   </h5>
-                  <% if(currentUser){ %> 
+                  <% if(currentUser&&currentUser.username==='admin'){ %> 
                     <form class="d-inline-block" action="/cart/<%=product._id%>/add" method="POST">
                       <button href="#" class="btn btn-success btn-small">Add to Cart</button>
                     </form>

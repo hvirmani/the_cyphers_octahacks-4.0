@@ -9,9 +9,11 @@
           <li class="nav-item">
             <a class="nav-link" href="/">Home</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/products">Buy Scrap</a>
-          </li>
+          <% if(currentUser&&currentUser.username==='admin'){ %> 
+            <li class="nav-item">
+              <a class="nav-link" href="/products">Buy Scrap</a>
+            </li>
+          <% } %> 
           <li class="nav-item">
             <a class="nav-link" href="/prices">Scrap prices</a>
           </li>
@@ -32,7 +34,7 @@
             <li class="nav-item">
               <a class="nav-link" href="/contact">Contact us</a>
             </li>
-          <% }else{ %>
+          <% }else if(currentUser&&currentUser.username==='admin'){ %>
             <li class="nav-item">
               <a href="/user/cart" type="button" class="btn position-relative nav-link me-3">
                 <div style="width: 25px;">
