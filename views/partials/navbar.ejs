@@ -17,7 +17,7 @@
           <li class="nav-item">
             <a class="nav-link" href="/prices">Scrap prices</a>
           </li>
-          <% if(currentUser){ %>
+          <% if(currentUser&&currentUser.username!=='admin'){ %>
             <li class="nav-item">
               <a class="nav-link" href="/products/new">Sell Scrap</a>
             </li>
