@@ -16,7 +16,7 @@ const User=require('./models/user');
 
 let data = {
   Header: {
-    title: "Kabadi Express",
+    title: "Kabadi kart",
     paragraph:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sed commodo nibh ante facilisis bibendum.",
   },
