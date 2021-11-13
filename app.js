@@ -216,7 +216,11 @@ app.get("/", (req, res) => {
 
 app.get('/error',(req,res)=>{
  res.render('error');
-})
+});
+
+app.get("/aboutPage", (req, res) => {
+  res.render('aboutPage',{data});
+});
 
 app.use(productRoute);
 app.use(authRoute);

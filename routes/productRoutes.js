@@ -12,6 +12,7 @@ router.get("/prices", (req, res) => {
 });
 
 
+
 router.get("/products", async (req, res) => {
   try {
     const products = await Product.find({});
