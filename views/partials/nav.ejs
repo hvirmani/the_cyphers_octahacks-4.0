@@ -24,9 +24,11 @@
         <li>
           <a href="#portfolio" class="page-scroll"> GALLERY </a>
         </li>
-        <li>
-          <a href="/products" class="page-scroll"> Buy Scrap </a>
-        </li>
+        <% if(currentUser&&currentUser.username!=='admin'){ %>
+          <li>
+            <a href="/products/new" class="page-scroll"> Sell Scrap </a>
+          </li>
+        <% } %> 
         <li>
           <a href="/aboutPage" class="page-scroll"> About Us </a>
         </li>

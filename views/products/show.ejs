@@ -20,12 +20,10 @@
                     <form class="d-inline-block" action="/cart/<%=product._id%>/add" method="POST">
                       <button href="#" class="btn btn-success btn-small">Add to Cart</button>
                     </form>
-                    <% if(currentUser.username==='admin'){ %>
                       <a href="/products/<%=product._id%>/edit" class="btn btn-info btn-small">Edit</a>
                       <form class="d-inline-block" action="/products/<%= product._id %>?_method=DELETE" method="POST">
                         <button class="btn btn-danger btn-small">Delete</button>
                       </form>
-                    <% } %>
                   <% }else{ %> 
                     <a href="/login" class="btn btn-info btn-small">Login to Buy</a>
                   <% } %> 
