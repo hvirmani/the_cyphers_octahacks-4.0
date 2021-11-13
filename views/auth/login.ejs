@@ -1,0 +1,31 @@
+<%- include("../partials/header") %>
+    <%- include("../partials/navbar") %>
+
+        <main class="container">
+            <div class="row">
+                <%- include("../partials/flash") %>
+                <div class="col-sm-7 col-lg-5 mx-auto" id="log">
+                    <h1 class="display-6" style="text-align: center;font-weight: 400;">Sign in</h1>
+                    <form action="/login" method="POST">
+                        <div class="mb-3">
+                            <label for="username" class="form-label">Username</label>
+                            <input type="text" class="form-control" id="username" name="username" placeholder="Username"/>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" name="password" placeholder="password"/>
+                        </div>
+                        <button type="submit" class="btn btn-success btn-sm" style="margin-left:30%;width: 40%;">Login</button>
+                    </form>
+                    <div class="mt-3" style="text-align: center;">
+                      <a href="/register" style="text-decoration: none;">
+                        Don't have an account? Sign up</a>  
+                    </div>
+                    <div class="mt-3" style="text-align: center;">
+                        <p style="opacity: 0.6;">Copyright &copy; Your Website 2021.</p> 
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <%- include("../partials/footer") %>

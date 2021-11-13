@@ -1,0 +1,275 @@
+<%- include("../partials/header") %>
+  <%- include("../partials/navbar") %>
+
+<style>
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  align-items: center;
+  background: #eee;
+  color: rgba(0, 0, 0, 0.8);
+  display: grid;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  height: 100vh;
+  justify-items: center;
+  font-weight: 100vw;
+}
+
+.signup-container {
+  display: grid;
+  grid-template-areas: "left right";
+  max-width: 900px;
+}
+
+.left-container {
+  background: #fdfdfd;
+  overflow: hidden;
+  padding: 40px 0 0 0;
+  position: relative;
+  text-align: center;
+  width: 300px;
+}
+.left-container h1 {
+  color: rgba(0, 0, 0, 0.8);
+  display: inline-block;
+  font-size: 24px;
+}
+.left-container h1 i {
+  background: #30f191;
+  border-radius: 50%;
+  color: #5ae40a;
+  font-size: 24px;
+  margin-right: 5px;
+  padding: 10px;
+  transform: rotate(-45deg);
+}
+
+.left-container .puppy {
+  bottom: -5px;
+  position: absolute;
+  text-align: center;
+}
+.left-container .puppy:before {
+
+  content: "";
+  height: 150%;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+.left-container img {
+
+  width: 70%;
+}
+
+.right-container {
+  background: #8ee973;
+  display: grid;
+  grid-template-areas: "." ".";
+  width: 500px;
+}
+.right-container h1:nth-of-type(1) {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 28px;
+  font-weight: 600;
+}
+.right-container .set {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+.right-container input {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  height: 38px;
+  line-height: 38px;
+  padding-left: 5px;
+}
+.right-container input, .right-container label {
+  color: rgba(0, 0, 0, 0.8);
+}
+.right-container header {
+  padding: 40px;
+}
+.right-container label, .right-container input, .right-container .pets-photo {
+  width: 176px;
+}
+.right-container .pets-photo {
+  align-items: center;
+  display: grid;
+  grid-template-areas: ". .";
+}
+.right-container .pets-photo button {
+  border: none;
+  border-radius: 50%;
+  height: 38px;
+  margin-right: 10px;
+  outline: none;
+  width: 38px;
+}
+.right-container .pets-photo button i {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 16px;
+}
+.right-container .pets-weight .radio-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.right-container footer {
+  align-items: center;
+  background: #fff;
+  display: grid;
+  padding: 5px 40px;
+}
+.right-container footer button {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  height: 38px;
+  line-height: 38px;
+  width: 100px;
+  border-radius: 19px;
+  font-family: "Montserrat", sans-serif;
+}
+.right-container footer #back {
+  background: #fff;
+  transition: 0.2s all ease-in-out;
+}
+.right-container footer #back:hover {
+  background: #171A2B;
+  color: white;
+}
+.right-container footer #next {
+  background: #807182;
+  border: 1px solid transparent;
+  color: #fff;
+}
+.right-container footer #next:hover {
+  background: #171A2B;
+}
+
+.pets-name label, .pets-breed label, .pets-birthday label, .pets-gender label, .pets-spayed-neutered label, .pets-weight label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.radio-container {
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  display: inline-block;
+  padding: 5px;
+  width: 250px;
+}
+
+.radio-container label {
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  display: inline-block;
+  height: 26px;
+  line-height: 26px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  transition: 0.2s all ease-in-out;
+  width: 80px;
+}
+
+.radio-container input[type=radio] {
+  display: none;
+}
+
+.radio-container input[type=radio]:checked + label {
+  background: #F7B1AB;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+
+.pointer {cursor: pointer;}
+.context-menu {cursor: context-menu;}
+
+    </style>
+    
+</head>
+<body>
+    <div class='signup-container'>
+  <div class='left-container'>
+    <h1>
+      <i class='fas fa-paw'></i>
+      Kabadi Kart
+    </h1>
+    <div class='puppy'>
+      <img src='https://qph.fs.quoracdn.net/main-qimg-5d2061d963199d6b355ad47a134176bf.webp'>
+    </div>
+  </div>
+  <div class='right-container'>
+    <header>
+      <h1>Sell off
+        Anything, Anywhere, Anytime</h1>
+      <h2>on Demand Scrap Collection Service</h2>
+      
+  <form action="/products" method="POST">
+    <div class='set'>
+        <div class='pets-name'>
+          <label for="name">Product Name</label>
+          <input name="name" id='pets-name' placeholder="Name" type='text'>
+        </div>
+        <div class='pets-name'>
+            <label for='image'>Image Url</label>
+            <input name="image" id='pets-name' placeholder="image" type='text'>
+          </div>
+      </div>
+      <div class='set'>
+        <div class='pets-name'>
+          <label for="phone">Mobile number</label>
+          <input name="phone" id='pets-name' placeholder="mobile number" type='text'>
+        </div>
+        <div class='pets-name'>
+            <label for='address'>Address</label>
+            <input name="address" id='pets-name' placeholder="Address" type='text'>
+          </div>
+      </div>
+      <div class='set'>
+        <div class='pets-gender'>
+          <label for='gender-female'>Type</label>
+          <div class='radio-container'>
+            <input checked='' id='category1' name='category' type='radio' value='disposable'>
+            &ensp;<label class="pointer"for='category1'>Disposable</label>&ensp; &ensp; &ensp; &ensp;
+            <input id='category2' name='category' type='radio' value='electronics'>
+            <label class="pointer"for='category2'>Electronics</label>
+          </div>
+        </div>
+      </div>
+      <div class='pets-weight'>
+        <label for='weight-0-25'>Weight</label>
+        <div class='radio-container'>
+          <input checked='' id='weight-0-25' name='weight' type='radio' value='0-5'>
+          <label class="pointer"for='weight-0-25'>0-5 kgs </label>
+          <input id='weight-25-50' name='weight' type='radio' value='5-10'>
+          <label class="pointer"for='weight-25-50'>5-10 kgs</label>
+          <input id='weight-50-100' name='weight' type='radio' value='10-20'>
+          <label class="pointer"for='weight-50-100'>10-20 kgs</label>
+          <input id='weight-100-plus' name='weight' type='radio' value='20+'>
+          <label class="pointer"for='weight-100-plus'>20+ kgs</label>
+        </div>
+      </div>
+    </header>
+    <footer>
+      <div class='set'>
+        <a href="/products"><button id='back' >Back</button></a>
+        <button id='next' type="submit">Submit</button>
+      </div>
+    </footer>
+  </form> 
+  </div>
+</div>
+
+<%- include("../partials/footer") %>

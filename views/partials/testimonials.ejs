@@ -1,0 +1,24 @@
+<div id="testimonials">
+  <%let arr=data.Testimonials%>
+  <div class="container">
+    <div class="section-title text-center">
+      <h2>What our clients say</h2>
+    </div>
+    <div class="row">
+      <%arr.map(function(element,index){%>
+        <div class="col-md-4">
+          <div class="testimonial">
+            <div class="testimonial-image">
+              <img src="<%=element.img%>" alt="" />
+            </div>
+            <div class="testimonial-content">
+              <p>"<%=element.text%>"</p>
+              <div class="testimonial-meta">- <%=element.name%></div>
+            </div>
+          </div>
+        </div>
+      <%})%>
+    </div>
+  </div>
+</div>
+;

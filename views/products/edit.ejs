@@ -1,0 +1,35 @@
+<%- include("../partials/header") %>
+    <%- include("../partials/navbar") %>
+
+        <main class="container">
+            <div class="row">
+                <div class="col-md-6 mx-auto">
+                    <h1 class="display-6">Edit product</h1>
+                    <form action="/products/<%=product._id%>?_method=PATCH" method="POST">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" name="name" value="<%= product.name %>"/>
+                        </div>
+                        <div class="mb-3">
+                            <label for="image" class="form-label">Image Url</label>
+                            <input type="text" class="form-control" id="image" name="image" placeholder="Image Url" value="<%=product.image%>"/>
+                        </div>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Weight</label>
+                            <input type="text" class="form-control" id="weight" name="weight" value="<%= product.weight%> "/>
+                        </div>
+                        <div class="mb-3">
+                            <label for="address" class="form-label">Address</label>
+                            <input type="text" class="form-control" id="address" name="address" value="<%= product.address%> "/>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Mobile No</label>
+                            <input type="text" class="form-control" id="phone" name="phone" value="<%= product.phone%> "/>
+                        </div>
+                        <button type="submit" class="btn btn-success btn-sm">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+
+        <%- include("../partials/footer") %>

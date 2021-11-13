@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="app.css">
+     <script src="/public/jQuery.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <style>
+    :root{
+ --main-color:#0bab64;
+}
+
+#idhead{
+  margin-top: 60px;
+}
+
+.navbar{
+ background-color: var(--main-color);
+}
+
+      .body2{
+    margin:0% 4% 4% 4%;
+    
+    color: black;
+    font-family: Poppins__subset, Poppins, Verdana, sans-serif;
+    
+}
+.head1{
+    margin-top:0%;
+    color:black;
+    display: flex;
+    width: 60%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+.body11{
+    margin:0.5%;
+    border-bottom:1px solid rgba(94, 75, 75, 0.75);
+    
+    padding-left:0;
+}
+.accordion {
+    
+    color:  #085732;
+    cursor: pointer;
+    padding:25px 2px;
+    width: 60%;
+    border:none;
+    text-align: left;
+    font-size: 25px;
+    transition: 0.4s;
+  }
+
+  .accordion:after {
+    content: '\002B';
+    color: #1cb86f;
+    font-weight: bold;
+    float: left;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+    color: #1cb86f;
+  }
+  
+  .panel {
+    padding: 0 1%;
+   text-align:left;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.83;
+     margin-bottom:0%;
+    display: flex;
+    flex-direction:row;
+    justify-content:start;
+    flex-wrap:wrap;
+  }
+  .panel div{
+      border:1px solid #c9c9be;
+      border-radius:5%;
+      font-size:14px;
+      padding:1%;
+      margin-left: 1%;;
+      margin-bottom: 1%;;
+  }
+    </style>
+</head>
+<body> 
+    <%- include("../partials/navbar") %>
+    <h2 id="idhead" class="display-5 text-center">Scrap Prices</h2>
+    <section id="questions-outer-container">
+       
+        <div class="body2">
+            <div class="body11">
+                <div class="accordion">&nbsp;&nbsp;Paper</div>
+                <div class="panel">
+                    <div>
+                        Newspaper<br>
+                        &#8377; 13/kg
+                    </div>
+                    <div>
+                      Books<br>
+                      &#8377; 6/kg
+                  </div>
+                  <div>
+                      Carton<br>
+                      &#8377; 13/kg
+                  </div>
+                  <div>
+                    Magazines<br>
+                    &#8377; 13/kg
+                </div>
+                <div>
+                  White Papers<br>
+                  &#8377; 7/kg
+              </div>
+              <div>
+                  Grey Board<br>
+                  &#8377; 1.5/kg
+              </div>
+              <div>
+                  Record Paper<br>
+                  &#8377; 6/kg
+              </div>
+              <div>
+                  Carton(Commercial)<br>
+                  &#8377; 13/kg
+              </div>
+              <div>
+                  Copy<br>
+                  &#8377; 6/kg
+              </div>
+              <div>
+                  Used Beverage Carton(Tetra Pak)<br>
+                  &#8377; 4/kg
+              </div>
+                </div>
+            </div>
+
+            <div class="body11">
+                <div class="accordion">&nbsp;&nbsp;Plastics</div>
+                <div class="panel">
+                  <div>
+                      Soft Plastic<br>
+                      &#8377;  6/kg
+                  </div>
+                  <div>
+                    Hard Plastic<br>
+                    &#8377;  2/kg
+                  </div>
+                  <div>
+                    Mix Plastic<br>
+                    &#8377; 4/Kg
+                  </div>
+                  <div>
+                    &#8377; Milk Covers<br>
+                    2/Kg
+                  </div>
+                  <div>
+                    Water/Oil Covers<br>
+                    &#8377; 3/Kg
+                  </div>
+                  <div>
+                    Polythene (Mix)<br>
+                    &#8377; 4/Kg
+                  </div>
+                  <div>
+                    Plastic Jar (15ltr)<br>
+                    &#8377;7/Piece
+                  </div>
+                  <div>
+                    Fibre<br>
+                    &#8377;5/Kg
+                  </div>
+                  <div>
+                    Plastic Jar (5ltr)<br>
+                    &#8377;2/Piece
+                  </div>
+                  <div>
+                    Plastic Bori<br>
+                    &#8377; 4/Kg
+                  </div>
+                </div>
+            </div>
+            <div class="body11">
+                <div class="accordion">&nbsp;&nbsp;Metal</div>
+                <div class="panel">
+                    <div>
+                        Iron<br>
+                        &#8377;  22/kg
+                    </div>
+                    <div>
+                      Tin<br>
+                      &#8377;  15/kg
+                    </div>
+                    <div>
+                      Steel<br>
+                      &#8377; 30/Kg
+                    </div>
+                    <div>
+                      Brass<br>
+                      250/Kg
+                    </div>
+                    <div>
+                      Copper<br>
+                      &#8377; 400/Kg
+                    </div>
+                    <div>
+                      Aluminium<br>
+                      &#8377; 60/Kg
+                    </div>
+                    <div>
+                      Aluminium Cable<br>
+                      &#8377;25/kg
+                    </div>
+                    <div>
+                        Copper Cable<br>
+                        &#8377;60/kg
+                    </div>
+                    <div>
+                        Scooter<br>
+                        &#8377;500/piece
+                    </div>
+                     
+            </div>
+            </div>
+            <div class="body11">
+                <div class="accordion">&nbsp;&nbsp;E-waste</div>
+                <div class="panel">
+                    <div>
+                        E-Waste<br>
+                        &#8377; 8/Kg
+                      </div>
+                      <div>
+                        Fridge<br>
+                        &#8377;300/Piece
+                      </div>
+                      <div>
+                          T.V (CRT)<br>
+                          &#8377;50/Piece
+                      </div>
+                      <div>
+                          LCD/LED<br>
+                          &#8377;50/piece
+                      </div>
+                      <div>
+                        CPU<br>
+                        &#8377;100/Piece
+                    </div>
+                    <div>
+                        Printer<br>
+                        &#8377;15/Kg
+                    </div>
+                </div>
+            </div>
+            <div class="body11">
+                <div class="accordion">&nbsp;&nbsp;Other</div>
+                <div class="panel">
+                    <div>
+                        Beer Bottles<br>
+                        &#8377;0.5/Piece
+                    </div>
+                    <div>
+                        Mix-Waste<br>
+                        &#8377;4/piece
+                    </div>
+                    <div>
+                      Tyre<br>
+                      &#8377;3/Kg
+                  </div>
+                  <div>
+                      Women hairs<br>
+                      &#8377;1000/Kg
+                  </div>
+                </div>
+            </div>
+        </div>
+    </section>   
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+</body>
+</html>

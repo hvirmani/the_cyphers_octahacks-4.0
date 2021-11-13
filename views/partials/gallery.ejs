@@ -1,0 +1,30 @@
+
+<div id="portfolio" class="text-center">
+    <%let arr= data.Gallery%>
+    <%function fun(){%>
+        <%return openImageViewer(index);%>
+    <%}%>
+    <div class="container-fluid">
+      <div class="section-title">
+        <h2>Gallery</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leonec.</p>
+      </div>
+      <div class="row">
+        <div class="portfolio-items">
+            <%arr.map(function(element,index){%>
+                <div class="col-sm-6 col-md-4 col-lg-4">
+                    <div class="portfolio-item cursor">
+                      <div class="hover-bg">
+                        <div class="hover-text">
+                          <h4><%=element.title%></h4>
+                        </div>
+                        <img src="<%=element.thumb%>" class="img-responsive" alt="Project Title" />
+                      </div>
+                    </div>
+                  </div>
+            <%})%>
+        </div>
+      </div>
+    </div>
+  </div>
+

@@ -1,0 +1,24 @@
+<div id='services' class='text-center'>
+    <%let a=data.Services;%>
+    <div class='container'>
+      <div class='section-title'>
+        <h2>Our Services</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed
+          dapibus leonec.
+        </p>
+      </div>
+      <div class='row'>
+        <%a.map(function(element,index){%>
+            <div class='col-md-4'>
+                <i class="<%=element.icon%>"></i>
+                <div class='service-desc'>
+                  <h3><%=element.name%></h3>
+                  <p><%element.text%></p>
+                </div>
+              </div>
+        <%})%>
+      </div>
+    </div>
+  </div>
+

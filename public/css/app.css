@@ -1,0 +1,27 @@
+:root{
+ --main-color:#0bab64;
+}
+
+.navbar{
+ background-color: var(--main-color);
+}
+
+main{
+ margin-top: 4.5rem;
+}
+
+.card{
+ box-shadow: 1px 0px 2px #dee2e6;
+}
+
+.card img{
+ padding: 10px;
+ height: 300px;
+}
+
+#log{
+ margin-top: 20px;
+ padding-bottom: 20px;
+ background: linear-gradient(to right, #3b978f 0%, #0bab64 100%);
+ border-radius: 10px;
+}
