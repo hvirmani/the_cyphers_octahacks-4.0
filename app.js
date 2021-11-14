@@ -18,7 +18,7 @@ let data = {
   Header: {
     title: "Kabadi kart",
     paragraph:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sed commodo nibh ante facilisis bibendum.",
+      "An initiative for those people who want to sell scrap and for those who want to buy it.",
   },
   About: {
     paragraph:
@@ -38,33 +38,33 @@ let data = {
   },
   Services: [
     {
-      icon: "fa fa-wordpress",
-      name: "Lorem ipsum dolor",
+      icon: "fa fa-recycle",
+      name: "Recycling of segregated waste",
+      text: "To segregate Dry & wet waste, we install an innovative & tech-friendly bins where every information is propagated via our Application system.",
+    },
+    {
+      icon: "fa fa-trash",
+      name: "Automated Smart Dustbins",
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.",
     },
     {
-      icon: "fa fa-cart-arrow-down",
-      name: "Consectetur adipiscing",
+      icon: "fa fa-inr",
+      name: "Sell your scrap at higher prices",
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.",
     },
     {
-      icon: "fa fa-cloud-download",
-      name: "Lorem ipsum dolor",
+      icon: "fa fa-check",
+      name: "Waste Audit",
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.",
     },
     {
-      icon: "fa fa-language",
-      name: "Consectetur adipiscing",
+      icon: "fa fa-search",
+      name: "Impact/Sustainability report",
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.",
     },
     {
-      icon: "fa fa-plane",
-      name: "Lorem ipsum dolor",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.",
-    },
-    {
-      icon: "fa fa-pie-chart",
-      name: "Consectetur adipiscing",
+      icon: "fa fa-tasks",
+      name: "Electronic waste management",
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.",
     },
   ],
