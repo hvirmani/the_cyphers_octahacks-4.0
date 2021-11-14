@@ -22,7 +22,7 @@ let data = {
   },
   About: {
     paragraph:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "The Kabadi Kart collects 40+ scrap items that can be recycled like Paper, Plastic, Cartons, Metal, E-waste etc. We make sure to offer attractive prices for Scrap items by accurately weighing the scrap using Electronic weighing machine. You can also avail different offers we provide throughout the year. For accurate weight measurement we use Electronic Weighing machine.",
     Why: [
       "Lorem ipsum dolor",
       "Tempor incididunt",
